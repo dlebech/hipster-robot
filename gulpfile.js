@@ -1,6 +1,6 @@
 const spawn = require('child_process').spawn;
 const gulp = require('gulp');
-const sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('node-sass'));
 const del = require('del');
 const webpack = require('webpack');
 const webpackStream = require('webpack-stream');

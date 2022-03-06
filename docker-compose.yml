@@ -2,7 +2,7 @@ version: '3'
 
 services:
   redis:
-    image: redis:4.0
+    image: redis:6
     container_name: hipster-robot-redis
     volumes:
       - ./docker/data/redis:/data
@@ -13,7 +13,7 @@ services:
     container_name: hipster-robot-dev
     command: node_modules/.bin/gulp
     volumes:
-     - .:/usr/src/app
+      - .:/usr/src/app
     depends_on:
       - redis
     env_file: .env

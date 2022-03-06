@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Hipster Robot</title>
-    <link href="/css/main.css" rel="stylesheet">
-    <link rel="shortcut icon" href="/img/favicon.png">
-  </head>
-  <body>
-    {% block content %}{% endblock %}
-    <script src="/js/vendor.js"></script>
-    {% block scripts %}{% endblock %}
-    <hr>
-    <footer>
-      <div class="container">
-        <p class="text-center social">
-          <a href="https://github.com/dlebech/hipster-robot" aria-label="Github">
-            Source Code
-          </a>
-        </p>
-      </div>
-    </footer>
-  </body>
+
+<head>
+  <title>Hipster Robot</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="/css/main.css" rel="stylesheet">
+  <link rel="shortcut icon" href="/img/favicon.png">
+</head>
+
+<body>
+  {% block content %}{% endblock %}
+  <script src="/js/vendor.js"></script>
+  {% block scripts %}{% endblock %}
+  <hr>
+  <footer>
+    <div class="container">
+      <p class="text-center social">
+        <a href="https://github.com/dlebech/hipster-robot" aria-label="Github">
+          Source Code
+        </a>
+      </p>
+    </div>
+  </footer>
+</body>
+
 </html>

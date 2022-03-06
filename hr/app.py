@@ -12,7 +12,7 @@ from . import view, config
 from .bot import default_bot
 from .redis import redis
 
-app = Sanic(__name__)
+app = Sanic('hipster-robot')
 here = os.path.dirname(os.path.abspath(__file__))
 app.static("/js", os.path.join(here, "static/compiled/js"))
 app.static("/css", os.path.join(here, "static/compiled/css"))

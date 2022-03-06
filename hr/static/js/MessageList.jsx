@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import PropTypes from 'prop-types';
 import uuid4 from 'uuid/v4';
 
@@ -33,13 +32,7 @@ class MessageList extends React.Component {
 
     return (
       <div className="messages">
-        <ReactCSSTransitionGroup
-          transitionName="highlight"
-          transitionEnterTimeout={300}
-          transitionLeaveTimeout={300}
-        >
-          {listItems}
-        </ReactCSSTransitionGroup>
+        {listItems}
       </div>
     );
   }
