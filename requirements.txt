@@ -1,7 +1,7 @@
 asyncio-redis==0.16.0
 ChatterBot==1.0.8
 chatterbot-corpus==1.2.0
-Jinja2==2.10.1
+Jinja2==2.11.3
 markupsafe==2.0.1
 python-dateutil==2.8.0
 requests==2.21.0
